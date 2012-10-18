@@ -1,3 +1,6 @@
+# Input should look like [user] path
+PS1="\n[\u] \[\033[1;33m\]\w\a\[\033[0m\] "
+
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export LC_CTYPE=en_US.UTF-8
