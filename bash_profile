@@ -1,17 +1,25 @@
-# Input should look like [user] path
-PS1="\n[\u] \[\033[1;33m\]\w\a\[\033[0m\] "
+# Terminal input template.
+PS1="[rafael] $ "
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export LC_CTYPE=en_US.UTF-8
 
-# Make sure is looking for GIT in the right place.
-export PATH=/usr/local/bin/git:$PATH
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin/git:$PATH"
+
+# OSX JavaScript binary.
+alias jsc=/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc
 
 # Manage hidden files.
 show-hidden-files() {
 	`defaults write com.apple.Finder AppleShowAllFiles $1`
 	killall Finder
+}
+
+fla2img() {
+	sh ~/Projects/personal/fla2img/fla2img.sh $@
 }
 
 # Helper to generate a .swf file by an .html file.
