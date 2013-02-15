@@ -1,5 +1,5 @@
 # Terminal input template.
-PS1="[rafael] $ "
+PS1="[\#] $ "
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
