@@ -19,6 +19,6 @@ if [[ ! -d ~/bin ]]; then
 	mkdir ~/bin
 fi
 
-mv ./git-diff.sh ~/bin/git-diff.sh
+cp ./git-diff.sh ~/bin/git-diff.sh
 sudo chmod u+x ~/bin/git-diff.sh
 git config --global diff.external ~/bin/git-diff.sh
