@@ -1,25 +1,22 @@
-all: install install-bash install-git install-jshint install-st
-
-install:
-	@sudo su
+install: install-bash install-git install-jshint install-st done
 
 install-bash:
 	@echo "Installing bash preferences..."
-	@sh ./bash/install.sh
+	@cd ./bash && sh ./install.sh
 
 install-git:
 	@echo "Installing Git preferences..."
-	@sh ./git/install.sh
+	@cd ./git && sh ./install.sh
 
 install-jshint:
 	@echo "Installing JSHint preferences..."
-	@sh ./jshint/install.sh
+	@cd ./jshint && sh ./install.sh
 
 install-st:
 	@echo "Installing Sublime Text preferences..."
-	@sh ./sublime-text/install.sh
+	@cd ./sublime-text && sh ./install.sh
 
 done:
 	@echo "Dotfiles successfully installed"
 
-.PHONY: all
+.PHONY: install

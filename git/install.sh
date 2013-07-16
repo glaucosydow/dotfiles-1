@@ -13,7 +13,12 @@ git config --global color.ui true
 git config --global push.default matching
 
 # Setting up opediff as default merge tool
-/usr/bin/xcode-select -switch /Applications/Xcode.app/Contents/Developer/
+sudo /usr/bin/xcode-select -switch /Applications/Xcode.app/Contents/Developer/
+
+if [[ ! -d ~/bin ]]; then
+	mkdir ~/bin
+fi
+
 mv ./git-diff.sh ~/bin/git-diff.sh
-chmod u+x ~/bin/git-diff.sh
+sudo chmod u+x ~/bin/git-diff.sh
 git config --global diff.external ~/bin/git-diff.sh
