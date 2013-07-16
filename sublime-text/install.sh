@@ -1,0 +1,1 @@
+cp -r ./*sublime* "/Users/rafaelrinaldi/Library/Application Support/Sublime Text 2/Packages/User"

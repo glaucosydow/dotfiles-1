@@ -9,8 +9,13 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin/git:$PATH"
 
+export PYTHONPATH="/usr/local/lib/python2.7"
+
 # OSX JavaScript binary.
 alias jsc=/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc
+
+# MXMLC wrapper.
+alias mxmlc=~/Code/Flash/SDK/flex_sdk_4.6/bin/mxmlc
 
 # Manage hidden files.
 show-hidden-files() {
@@ -18,16 +23,24 @@ show-hidden-files() {
 	killall Finder
 }
 
-fla2img() {
-	sh ~/Projects/personal/fla2img/fla2img.sh $@
+# Get IP number.
+ip() {
+	ipconfig getifaddr en1
 }
 
-# Helper to generate a .swf file by an .html file.
-swf-to-html() {
-	sh ~/Code/Scripts/swf-to-html/swf-to-html.sh | xargs $@
+# Helper for BrowserStack's web tunnel.
+tunnel() {
+	java -jar ~/Code/Scripts/BrowserStackTunnel.jar -f RxBfa3LT5jht3nFUpBOv $@
 }
 
-# Flash logging tool.
-flashtracer() {
-	sh ~/Code/Scripts/flashtracer $@
+# Apache.
+apache-restart() {
+	sudo apachectl restart
 }
+
+apache-settings() {
+	sudo subl /etc/apache2/httpd.conf
+}
+
+# Loads NVM.
+[[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
