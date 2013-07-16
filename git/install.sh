@@ -10,6 +10,7 @@ git config --global user.name "Rafael Rinaldi"
 git config --global user.email rafael.rinaldi@gmail.com
 git config --global core.editor "subl -n -w"
 git config --global color.ui true
+git config --global push.default matching
 
 # Setting up opediff as default merge tool
 /usr/bin/xcode-select -switch /Applications/Xcode.app/Contents/Developer/
