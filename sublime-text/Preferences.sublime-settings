@@ -1,18 +1,29 @@
 {
+	// Visual settings.
 	"auto_complete_commit_on_tab": false,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"color_scheme": "Packages/User/colour-schemes/Monokai Soda.tmTheme",
 	"draw_minimap_border": true,
-	"file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db", "*.sassc"],
-	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", ".sass-cache"],
+	"draw_white_space": "selection",
 	"font_face": "Menlo",
 	"font_size": 20.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"overlay_scroll_bars": "enabled",
+	"theme": "Soda Dark.sublime-theme",
+
+	// General settings
+	"ensure_newline_at_eof_on_save": true,
+	"find_selected_text": true,
+	"folder_exclude_patterns": [".sass-cache"],
 	"save_on_focus_lost": true,
 	"scroll_past_end": false,
 	"scroll_speed": 0,
+	"soda_folder_icons": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false,
+
+	// TODO list plugin.
 	"todo":
 	{
 		"case_sensitive": true,
