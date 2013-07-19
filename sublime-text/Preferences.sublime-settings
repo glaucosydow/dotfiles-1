@@ -16,7 +16,7 @@
 	"ensure_newline_at_eof_on_save": true,
 	"find_selected_text": true,
 	"folder_exclude_patterns": [".svn", ".git", ".sass-cache"],
-	"file_exclude_patterns": [".DS_Store", "*.db", "*.sassc", "*.scssc"],
+	"file_exclude_patterns": [".DS_Store", "*.db", "*.sassc", "*.scssc", ".gitkeep"],
 	"save_on_focus_lost": true,
 	"scroll_past_end": false,
 	"scroll_speed": 0,
