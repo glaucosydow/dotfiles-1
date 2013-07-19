@@ -3,7 +3,7 @@ path="/Users/$user/Library/Application Support/Sublime Text 2"
 snippets="$path/Packages/User/st-snippets"
 soda="$path/Packages/Theme - Soda"
 
-cp -r ./*sublime* "$path"
+cp -r ./*sublime* ./colour-schemes "$path/Packages/User"
 
 echo "Installing snippets..."
 
