@@ -1,5 +1,5 @@
 user=`whoami`
-path="/Users/$user/Library/Application Support/Sublime Text 2"
+path="/Users/$user/Library/Application Support/Sublime Text 3"
 snippets="$path/Packages/User/st-snippets"
 soda="$path/Packages/Theme - Soda"
 
@@ -12,6 +12,9 @@ if [[ ! -d $snippets ]]; then
 else
 	cd "$snippets" && git pull
 fi
+echo "Creating 'subl' symlink..."
+
+sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
 echo "Installing Soda theme..."
 
