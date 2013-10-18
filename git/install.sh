@@ -22,3 +22,7 @@ fi
 cp ./git-diff.sh ~/bin/git-diff.sh
 sudo chmod u+x ~/bin/git-diff.sh
 git config --global diff.external ~/bin/git-diff.sh
+
+echo "Installing git completion..."
+
+curl https://raw.github.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
